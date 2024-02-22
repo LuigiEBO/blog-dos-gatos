@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62, 5%;
+}
+body {
+  width: 420px;
+  margin: auto;
+  font-family: "Mulish", sans-serif;
+}
+header {
+  width: 100%;
+  height: 72px;
+  background-color: #065e7c;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  justify-content: center;
+}
+label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  color: #fff;
+}
+input {
+  border: none;
+  padding: 12px;
+  background-color: #167d9f;
+  border-radius: 4px;
+  width: 230px;
+}
+input::placeholder {
+  color: #fff;
+  font-size: 0.9rem;
+  font-family: "Mulish", sans-serif;
+}
+header .avatar {
+  width: 42px;
+  border-radius: 50%;
+}
+main img {
+  width: 420px;
+}
+.feedback {
+  margin: 24px auto 0 auto;
+  width: 380px;
+}
+.feedback h1 {
+  font-size: 24px;
+}
+.feedback button {
+  border: none;
+  background-color: #fff;
+}
+.feedback img {
+  width: 35px;
+  height: 35px;
+  margin: 8px 8px 0 0;
+  cursor: pointer;
+}
+.text {
+  width: 380px;
+  margin: auto;
+}
+.text p {
+  margin-top: 50px;
+}
+.sidebar {
+  width: 380px;
+}
+.sidebar h1 {
+  margin-top: 40px;
+}
+.new-post {
+  display: flex;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.text-sidebar {
+  display: block;
+  margin-left: 14px;
+}
+.new-post img {
+  width: 150px;
+  height: 80px;
+}
+.text-sidebar h2 {
+  font-size: 1.2rem;
+}
+.text-sidebar p {
+  font-size: 0.9rem;
+}
+footer {
+  background-color: #387e96;
+  padding: 24px;
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+}
+@media (min-width: 1200px) {
+  body {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "main main sidebar"
+      "footer footer footer";
+  }
+  header {
+    grid-area: header;
+  }
+  main {
+    grid-area: main;
+  }
+  aside {
+    grid-area: sidebar;
+  }
+  footer {
+    grid-area: footer;
+  }
+  input {
+    width: 1080px;
+  }
+  main img {
+    width: 800px;
+    height: 400px;
+    margin: 50px 0 0 140px;
+  }
+  .feedback {
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    height: 40px;
+    margin-left: 140px;
+    text-align: center;
+  }
+  .text {
+    width: 800px;
+    margin-left: 140px;
+  }
+  .sidebar {
+    margin-left: 0;
+  }
+}
